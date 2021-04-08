@@ -9,28 +9,29 @@ function Navbar() {
             <AppBar position="static">
                 <Box className="navbarBox">
                     <Toolbar className="navbar">
-                        <a href="">
+                        <Link to="/">
                             <Box className="navitem navitem1">
                                 <Typography variant="h6" color="primary" >
                                     <p className="navlink">Scheme</p>
+
                                 </Typography>
                             </Box>
-                        </a>
-                        <a className="plaagLink" href="">
+                        </Link>
+                        <Link to="/agenda" >
                             <Box className="navitem navitem2">
                                 <Typography variant="h6" color="primary" >
-                                    <Link to="/agenda"><p className="navlink">Your agenda</p>
-                                    </Link>
+                                    <p className="navlink">Your agenda</p>
                                 </Typography>
                             </Box>
-                        </a>
-                        <a className="login/signup" href="">
+                        </Link>
+                        <Link to="/login">
                             <Box className="navitem navitem2">
                                 <Typography variant="h6" color="primary" >
                                     <p className="navlink">Login</p>
+
                                 </Typography>
                             </Box>
-                        </a>
+                        </Link>
                     </Toolbar>
                 </Box>
             </AppBar>
